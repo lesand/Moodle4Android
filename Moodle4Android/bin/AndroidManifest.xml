@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moodle4android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Moodle Mobile"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.moodle4android.LoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.SplashScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.Courses"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.SplashScreenPreContent"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.CourseSections"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.SplashScreenPreHomeworks"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.HomeWorks"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.HomeworkContent"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.SplashScreemPreContentHomework"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.Recursos"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.SplashScreenPreRecursos"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.BarMenu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.Perfil"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.SplashScreenPrePerfil"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.Participantes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.SplashScreenPreParticipants"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.Mensajes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.SplashScreenPreMensajes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.Chat"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.SplashScreenPreChat"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.Configuracion"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.Acercade"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.LoremActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
+
+        <receiver
+            android:name="com.example.moodle4android.WidgetProvider"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider" />
+        </receiver>
+
+        <service
+            android:name="com.example.moodle4android.WidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <activity
+            android:name="com.example.moodle4android.CreateHomeWork"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moodle4android.SendMassiveMessage"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.example.moodle4android.LoremActivity2"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
+
+        <receiver
+            android:name="com.example.moodle4android.WidgetProvider2"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider2" />
+        </receiver>
+
+        <service
+            android:name="com.example.moodle4android.WidgetService2"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
+
+</manifest>

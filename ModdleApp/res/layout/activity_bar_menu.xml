@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#302a2a"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BarMenu" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnperfil"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignTop="@+id/linearLayout1"
+            android:background="#302a2a"
+            android:drawableLeft="@drawable/perfil"
+            android:text="Perfil"
+            android:textColor="@android:color/white"
+            android:onClick="OnClickPerfil"/>
+
+    </LinearLayout>
+
+     <Button
+         android:id="@+id/btneventos"
+         android:layout_width="147dp"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/linearLayout1"
+         android:layout_below="@+id/linearLayout1"
+         android:layout_marginTop="24dp"
+         android:background="#302a2a"
+         android:drawableLeft="@drawable/eventos"
+         android:text="Eventos"
+         android:textColor="@android:color/white" />
+
+     <Button
+         android:id="@+id/btnmensajes"
+         android:layout_width="147dp"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/btneventos"
+         android:layout_below="@+id/btneventos"
+         android:layout_marginTop="24dp"
+         android:background="#302a2a"
+         android:drawableLeft="@drawable/mensajes"
+         android:text="Mensajes"
+         android:onClick="OnClickMessages"
+         android:textColor="@android:color/white" />
+
+     <Button
+         android:id="@+id/btnparticipants"
+         android:layout_width="147dp"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/btnmensajes"
+         android:layout_below="@+id/btnmensajes"
+         android:layout_marginTop="24dp"
+         android:background="#302a2a"
+         android:drawableLeft="@drawable/participants"
+         android:onClick="OnClickMembers"
+         android:text="Miembros"
+         android:textColor="@android:color/white" />
+
+     <Button
+         android:id="@+id/btnnoticias"
+         android:layout_width="147dp"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/btnparticipants"
+         android:layout_below="@+id/btnparticipants"
+         android:layout_marginTop="26dp"
+         android:background="#302a2a"
+         android:drawableLeft="@drawable/noticias"
+         android:text="Noticias"
+         android:textColor="@android:color/white" />
+
+</RelativeLayout>

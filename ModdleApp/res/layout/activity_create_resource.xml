@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoactivity2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CreateResource" >
+
+    <Button
+        android:id="@+id/btnSubirRecurso"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/buttostyle2"
+        android:text="Subir Archivo"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnSeleccionarRecurso"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSubirRecurso"
+        android:layout_alignRight="@+id/btnSubirRecurso"
+        android:layout_below="@+id/btnSubirRecurso"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttostyle2"
+        android:onClick="OnBtnSelectdFileClicked"
+        android:text="Seleccionar Archivo"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textViewResource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSubirRecurso"
+        android:layout_alignLeft="@+id/btnSubirRecurso"
+        android:layout_marginBottom="19dp"
+        android:gravity="center"
+        android:text="Subir un archivo (Tamaño máximo: 20Mb) ó copie Link del Recurso"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/nameResource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewResource"
+        android:layout_alignLeft="@+id/textViewResource"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:background="#FFFFFF"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textNameResource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nameResource"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:text="Nombre del Recurso:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#302a2a"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BarMenuTeacher" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCreateHomework"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:background="#302a2a"
+        android:drawableRight="@drawable/tareas"
+        android:onClick="OnBtnCreateHomeWork"
+        android:text="Crear Tarea"
+        android:textColor="@android:color/white" 
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnUploadRecurso"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnCreateHomework"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:background="#302a2a"
+        android:drawableRight="@drawable/recurso2"
+        android:text="Subir Recurso"
+        android:textColor="@android:color/white"
+        android:onClick="OnBtnCreateResource"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnSubirPresentacion"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnUploadRecurso"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnUploadRecurso"
+        android:layout_marginTop="18dp"
+        android:background="#302a2a"
+        android:drawableRight="@drawable/presentacion"
+        android:text="           Subir Presentacion"
+        android:textColor="@android:color/white"
+        android:onClick="OnBtnCreatePresentation"
+        android:textSize="16sp" />
+
+</RelativeLayout>

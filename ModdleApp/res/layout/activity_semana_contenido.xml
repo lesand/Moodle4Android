@@ -1,0 +1,278 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SemanaContenido" 
+    android:background="@drawable/fondoactivity7">
+    
+    <TableLayout
+							   android:id="@+id/TableContentWeek"
+            				   android:layout_width="match_parent"
+            				   android:layout_height="match_parent"
+            				   android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+
+                        
+                        	   		<TableRow
+                        	   		    android:id="@+id/TableRow1"
+                            			android:layout_height="wrap_content"
+                            			android:layout_width="fill_parent"
+                            			android:gravity="center_horizontal">
+									
+                        	   		    
+       		 								<ImageView
+                  								android:id="@+id/imageWeek"
+                  								android:layout_width="wrap_content"
+                  								android:layout_height="wrap_content"
+                  								android:layout_alignParentTop="true"
+                  								android:layout_centerHorizontal="true"
+                  								android:layout_marginTop="10dp"
+                  								android:src="@drawable/weekico" />
+                            			
+                       				</TableRow>
+                       				    
+                        	   		    
+                       				
+                        	   		<TableRow
+                        	   		    android:id="@+id/TableRow2"
+                            			android:layout_height="wrap_content"
+                            			android:layout_width="fill_parent"
+                            			android:gravity="center"
+                            			>
+                        	   		 
+                        	   			 <TextView
+           							 	 	android:id="@+id/WeekTheme"
+            								android:layout_width="wrap_content"
+            								android:layout_height="wrap_content"
+            								android:text="Tema"
+            								android:textAlignment="center"
+            								android:textAppearance="?android:attr/textAppearanceLarge"
+            								android:textColor="#FF262626"
+            								android:textColorHint="#BABABA"
+            								android:textSize="30sp"
+            								android:textStyle="bold"
+            								android:gravity="center"
+            								 />
+                        	   		    
+                        	   		</TableRow>
+                        	   		
+                        	   		
+                        	   		<TableRow
+                        	   		    android:id="@+id/TableRow3"
+                            			android:layout_height="wrap_content"
+                            			android:layout_width="fill_parent"
+                            			android:gravity="center"
+                            			>
+                        	   		 	
+                        	   		    <TextView
+           							 	 	android:id="@+id/ContentTema"
+            								android:layout_width="wrap_content"
+            								android:layout_height="wrap_content"
+            								android:text="Seguridad Computacional"
+            								android:textAlignment="center"
+            								android:gravity="center"
+            								android:textAppearance="?android:attr/textAppearanceLarge"
+            								android:textColor="#FF262626"
+            								android:textColorHint="#BABABA"
+            								android:textSize="16sp"
+            								android:textStyle="bold"
+            								 />
+                        	   		    
+                        	   		    
+                        	   			 
+                        	   		    
+                        	   		</TableRow>
+                        	   		<TableRow>
+                        	   		      <TextView
+           							 	 	android:id="@+id/TextEmpty"
+            								android:layout_width="wrap_content"
+            								android:layout_height="wrap_content"
+            								android:text=""
+            								android:textAlignment="center"
+            								android:gravity="center"
+            								android:textAppearance="?android:attr/textAppearanceLarge"
+            								android:textColor="#FF262626"
+            								android:textColorHint="#BABABA"
+            								android:textSize="16sp"
+            								android:textStyle="bold"
+            								 />
+                        	   		    
+                        	   		</TableRow>
+                        	   		<TableRow
+                        	   		    android:id="@+id/TableRow3"
+                            			android:layout_height="wrap_content"
+                            			android:layout_width="fill_parent"
+                            			android:gravity="center"
+                            			>
+                        	   		 	
+                        	   		    <TextView
+           							 	 	android:id="@+id/ObjetivoWeek"
+            								android:layout_width="wrap_content"
+            								android:layout_height="wrap_content"
+            								android:text=" Objetivo del Tema"
+            								android:textAlignment="center"
+            								android:gravity="center"
+            								android:textAppearance="?android:attr/textAppearanceLarge"
+            								android:textColor="#FF262626"
+            								android:textColorHint="#BABABA"
+            								android:textSize="16sp"
+            								android:textStyle="bold"
+            								 />
+                        	   			 
+                        	   		    
+                        	   		</TableRow>
+                        	   		
+                        	   		
+                        	   		<TableRow
+                        	   		    android:id="@+id/TableRow4"
+                            			android:layout_height="wrap_content"
+                            			android:layout_width="fill_parent"
+                            			android:gravity="center"
+                            			>
+                        	   		 	
+                        	   		    <TextView
+           							 	 	android:id="@+id/ContentObjetivo"
+            								android:layout_width="wrap_content"
+            								android:layout_height="wrap_content"
+            								android:text="Que aprendan la seguridad de los sistemas lol"
+            								android:textAlignment="center"
+            								android:gravity="center"
+            								android:textAppearance="?android:attr/textAppearanceLarge"
+            								android:textColor="#FF262626"
+            								android:textColorHint="#BABABA"
+            								android:textSize="12sp"
+            								android:textStyle="bold"
+            								 />
+                        	   			 
+                        	   		    
+                        	   		</TableRow>
+                       				
+                        	   		
+                        	   		<TableRow>
+                        	   		      <TextView
+           							 	 	android:id="@+id/TextEmpty2"
+            								android:layout_width="wrap_content"
+            								android:layout_height="wrap_content"
+            								android:text=""
+            								android:textAlignment="center"
+            								android:gravity="center"
+            								android:textAppearance="?android:attr/textAppearanceLarge"
+            								android:textColor="#FF262626"
+            								android:textColorHint="#BABABA"
+            								android:textSize="20sp"
+            								android:textStyle="bold"
+            								 />
+                        	   		    
+                        	   		</TableRow>
+                        	   		<TableRow
+                        	   		    android:id="@+id/TableRow6"
+                            			android:layout_height="wrap_content"
+                            			android:layout_width="fill_parent"
+                            			android:gravity="center"
+                            			>
+                        	   		 	
+                        	   		    <TextView
+           							 	 	android:id="@+id/Recursostext"
+            								android:layout_width="wrap_content"
+            								android:layout_height="wrap_content"
+            								android:text="Recursos"
+            								android:textAlignment="center"
+            								android:gravity="center"
+            								android:textAppearance="?android:attr/textAppearanceLarge"
+            								android:textColor="#FF262626"
+            								android:textColorHint="#BABABA"
+            								android:textSize="18sp"
+            								android:textStyle="bold"
+            								 />
+                        	   			 
+                        	   		    
+                        	   		</TableRow>
+                        	   		<TableRow
+                        	   		    android:id="@+id/TableRow7"
+                            			android:layout_height="wrap_content"
+                            			android:layout_width="fill_parent"
+                            			android:gravity="center">
+
+                        	   			<LinearLayout
+                        	   			    android:layout_width="wrap_content"
+                        	   			    android:layout_height="wrap_content" >
+
+                        	   			    <Button
+                        	   			        android:id="@+id/buttonPresentaciones"
+                        	   			        style="?android:attr/buttonStyleSmall"
+                        	   			        android:layout_width="wrap_content"
+                        	   			        android:layout_height="wrap_content"
+                        	   			        android:background="#FFFFFF"
+                        	   			        android:drawableLeft="@drawable/recursos"
+                        	   			        android:text="Presentaciones" />
+
+                        	   			    <Button
+                        	   			        android:id="@+id/ButtonLecturas"
+                        	   			        style="?android:attr/buttonStyleSmall"
+                        	   			        android:layout_width="wrap_content"
+                        	   			        android:layout_height="wrap_content"
+                        	   			        android:layout_weight="0.49"
+                        	   			        android:text="Lecturas"
+                        	   			        android:onClick="OnBtnClickLecturas"
+                        	   			        android:background="#FFFFFF"
+                        	   			        android:drawableLeft="@drawable/lecturas2" />
+
+                        	   			</LinearLayout>
+                        	   		    
+                        	   		</TableRow>
+                        	   		<TableRow
+                        	   		    android:id="@+id/TableRow9"
+                            			android:layout_height="wrap_content"
+                            			android:layout_width="fill_parent"
+                            			android:gravity="center"
+                            			>
+                        	   		 	
+                        	   		    <TextView
+           							 	 	android:id="@+id/ActividadesText"
+            								android:layout_width="wrap_content"
+            								android:layout_height="wrap_content"
+            								android:text="Actividades"
+            								android:textAlignment="center"
+            								android:gravity="center"
+            								android:textAppearance="?android:attr/textAppearanceLarge"
+            								android:textColor="#FF262626"
+            								android:textColorHint="#BABABA"
+            								android:textSize="18sp"
+            								android:textStyle="bold"
+            								 />
+                        	   			 
+                        	   		    
+                        	   		</TableRow>
+                        	   		<TableRow
+                        	   		    android:id="@+id/TableRow8"
+                            			android:layout_height="wrap_content"
+                            			android:layout_width="fill_parent"
+                            			android:gravity="center">
+
+                        	   			<LinearLayout
+                        	   			    android:layout_width="wrap_content"
+                        	   			    android:layout_height="wrap_content"
+                        	   			    android:gravity="center">
+
+                        	   				<Button
+                        	   				    android:id="@+id/buttonTareas"
+                        	   				    style="?android:attr/buttonStyleSmall"
+                        	   				    android:layout_width="wrap_content"
+                        	   				    android:layout_height="wrap_content"
+                        	   				    android:background="#FFFFFF"
+                        	   				    android:drawableLeft="@drawable/tareas2"
+                        	   				    android:onClick="onBtnClickHomeWork"
+                        	   				    android:text="Tareas" />
+
+                        	   			</LinearLayout>
+                        	   		    
+                        	   		</TableRow>
+                        	   		
+
+                        	   		
+                       		</TableLayout>
+
+</RelativeLayout>

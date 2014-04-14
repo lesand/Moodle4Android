@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="320dp"
+     android:layout_height="200dp"
+     android:background="#FFFFFF"
+     android:orientation="vertical">
+     
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ced4c7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tarea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     Clases"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextNameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     Leonel Sánchez"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+     
+    
+    <ListView 
+  android:id="@+id/words"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_marginTop="3dp"
+  android:layout_marginLeft="3dp"
+  android:background="#FFFFFF"
+  
+/>
+    
+    
+    
+</LinearLayout>

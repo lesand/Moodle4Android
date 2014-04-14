@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.moddleapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/uniteclogo"
+        android:label=""
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+        <receiver
+            android:name="com.example.moddleapp.Miwidget"
+            android:label="Primer_Widget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider" />
+        </receiver>
+
+        <activity android:name="ar.com.daidalos.afiledialog.FileChooserActivity" />
+        <activity
+            android:name="com.example.moddleapp.MainActivity"
+            android:label=""
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.Showclases"
+            android:label="@string/title_activity_showclases"
+            android:persistent="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.ConfigActivtiy"
+            android:label="@string/title_activity_config_activtiy"
+            android:persistent="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.ContentClass"
+            android:label="@string/title_activity_content_class" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.BarMenu"
+            android:label="@string/title_activity_bar_menu" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.ParticipantsMenuBar"
+            android:label="@string/title_activity_participants_menu_bar" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.SemanaContenido"
+            android:label="@string/title_activity_semana_contenido" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.ShowHomeWork"
+            android:label="@string/title_activity_show_home_work" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.Homeworks"
+            android:label="@string/title_activity_homeworks" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.CreateHomeWork"
+            android:label="@string/title_activity_create_home_work" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.ShowPerfil"
+            android:label="@string/title_activity_show_perfil" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.ShowMembers"
+            android:label="@string/title_activity_show_members" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.Chat"
+            android:label="@string/title_activity_chat" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.News"
+            android:label="@string/title_activity_news" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.Eventos"
+            android:label="@string/title_activity_eventos" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.BarMenuTeacher"
+            android:label="@string/title_activity_bar_menu_teacher" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.CreateResource"
+            android:label="@string/title_activity_create_resource" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.CreatePresentation"
+            android:label="@string/title_activity_create_presentation" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.Lecturas"
+            android:label="@string/title_activity_lecturas" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.Messages"
+            android:label="@string/title_activity_messages" >
+        </activity>
+        <activity
+            android:name="com.example.moddleapp.ParticipantsMessages"
+            android:label="@string/title_activity_participants_messages" >
+        </activity>
+    </application>
+
+</manifest>

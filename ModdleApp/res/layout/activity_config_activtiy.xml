@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ConfigActivtiy" 
+    android:background="@drawable/fondoactivity5">
+
+     <Button
+         android:id="@+id/btnoutlog"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/btnAcercade"
+         android:layout_alignRight="@+id/btnAcercade"
+         android:layout_below="@+id/btnAcercade"
+         android:layout_marginTop="46dp"
+         android:background="@drawable/btninfostyle"
+         android:drawableRight="@drawable/logindoor"
+         android:text="Cerrar Sesión"
+         android:textColor="@android:color/white" 
+         android:onClick="OnBtnclicklogout"/>
+
+     <Button
+         android:id="@+id/btnAcercade"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="81dp"
+         android:background="@drawable/btninfostyle"
+         android:drawableRight="@drawable/information"
+         android:text="Acerca de la aplicación"
+         android:textColor="@android:color/white" 
+         android:onClick="onBtnClickinfo"/>
+
+</RelativeLayout>

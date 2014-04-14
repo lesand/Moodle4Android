@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoactivity6"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ContentClass" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/actionbar1">
+                
+                
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    
+                    <ExpandableListView
+            				android:id="@+id/expandableListGeneralContent"
+            				android:layout_width="match_parent"
+				            android:layout_height="wrap_content"
+            				android:background="#FFFFFFFF" >
+           
+        			</ExpandableListView>
+                    
+                  
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                   	
+                          	
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                     
+                    <ScrollView 
+    							android:id="@+id/layout" 
+    							android:layout_height="match_parent"         
+    							android:scrollbars="horizontal|vertical" 
+    							android:layout_width="match_parent"     
+    							android:layout_marginTop="5dip"     
+    							android:scrollbarStyle="outsideInset"
+    							android:fillViewport="true">
+    							
+                        
+                        		<TableLayout
+							   android:id="@+id/TableWeeks"
+            				   android:layout_width="match_parent"
+            				   android:layout_height="match_parent"
+            				   android:shrinkColumns="*"  android:stretchColumns="*" >
+            				   
+            				   </TableLayout>
+                        
+    			   </ScrollView>
+                    
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

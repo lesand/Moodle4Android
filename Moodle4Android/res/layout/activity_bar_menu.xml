@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BarMenu"
+    android:background="#302a2a" >
+
+    <Button
+        android:id="@+id/ButtonPerfil"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:background="#302a2a"
+        android:drawableLeft="@drawable/userperfil"
+        android:text="Perfil"
+        android:textColor="#FFFFFF"
+        android:onClick="OnClickPerfil" />
+
+    <Button
+        android:id="@+id/buttonTareas"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ButtonPerfil"
+        android:layout_below="@+id/ButtonPerfil"
+        android:layout_marginTop="23dp"
+        android:background="#302a2a"
+        android:drawableLeft="@drawable/homeworks"
+        android:text="Tareas"
+        android:onClick="OnClickTareas"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/ButtonRecursos"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonTareas"
+        android:layout_below="@+id/buttonTareas"
+        android:layout_marginTop="20dp"
+        android:background="#302a2a"
+        android:drawableLeft="@drawable/resource"
+        android:text="Recursos"
+        android:onClick="OnClickRecursos"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/ButtonParticipantes"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ButtonRecursos"
+        android:layout_below="@+id/ButtonRecursos"
+        android:layout_marginTop="24dp"
+        android:background="#302a2a"
+        android:drawableLeft="@drawable/participants"
+        android:text="Participantes"
+        android:textColor="#FFFFFF" 
+        android:onClick="OnClickParticipants"/>
+
+    <Button
+        android:id="@+id/ButtonMensajes"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ButtonParticipantes"
+        android:layout_below="@+id/ButtonParticipantes"
+        android:layout_marginTop="21dp"
+        android:background="#302a2a"
+        android:drawableLeft="@drawable/messages"
+        android:text="Mensajes"
+        android:textColor="#FFFFFF"
+        android:onClick="OnClickMensajes" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ShowHomeWork"
+    android:background="@drawable/fondoactivity7" >
+
+    <TextView
+        android:id="@+id/HomeWorkDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="El programa deberá buscar patrones de la forma [0-9]+ e imprimir el contenido asi como el número de linea donde se encontró el patrón.  El nombre del archivo será un parámetro de linea de comando.
+
+Deberá utilizar el API de Linux para implementar dicho programa, de no hacerlo la nota máxima que podrá obtener es 20/100."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:gravity="center"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/HomeWorkDescription"
+        android:layout_below="@+id/HomeWorkDescription"
+        android:layout_marginTop="28dp"
+        android:textSize="12sp"
+        android:text="Fecha de Entrega: " />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="20dp"
+        android:textSize="8sp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="Thursday, 14 de November de 2013, 20:00" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Envio:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/namefileSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView3"
+        android:background="#FFFFFF"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namefileSelected"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Subir un archivo (Tamaño máximo: 20Mb)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnSubirArchivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSeleccionarArchivo"
+        android:layout_alignRight="@+id/btnSeleccionarArchivo"
+        android:layout_below="@+id/btnSeleccionarArchivo"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/buttostyle2"
+        android:text="Subir Archivo"
+        style="?android:attr/buttonStyleSmall"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnSeleccionarArchivo"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/namefileSelected"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/buttostyle2"
+        android:onClick="OnBtnSelectdFileClicked"
+        android:text="Seleccionar Archivo"
+        android:textColor="#FFFFFF"
+         />
+
+</RelativeLayout>

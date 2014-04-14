@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ShowPerfil"
+    android:background="@drawable/fondoactivity7" >
+
+    <ImageView
+        android:id="@+id/imagePerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/weekico" />
+    
+    <TextView
+           android:id="@+id/TextNameFull"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/layout24"
+           android:layout_marginLeft="14dp"
+           android:layout_toRightOf="@+id/imagePerfil"
+           android:text="Small Text"
+           android:textAppearance="?android:attr/textAppearanceSmall" />
+
+       <ScrollView
+           android:id="@+id/layout24"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/imagePerfil"
+           android:fillViewport="true"
+           android:scrollbarStyle="outsideInset"
+           android:scrollbars="horizontal|vertical"
+           android:layout_marginTop="25dp" >
+   
+           <TableLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" >
+
+               <TableRow
+                   android:id="@+id/tableRow1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" 
+                   android:background="#949ca1">
+
+                   <TextView
+                       android:id="@+id/textView2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="#FFFFFF"
+                       android:text="Contacto:"
+                       android:textAppearance="?android:attr/textAppearanceSmall" />
+
+               </TableRow>
+
+               <TableRow
+                   android:id="@+id/tableRow2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/styletable2" >
+
+                   <TextView
+                       android:id="@+id/textEmail"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Email: lesand@Unitec.edu"
+                       android:textAppearance="?android:attr/textAppearanceSmall" />
+
+               </TableRow>
+
+               <TableRow
+                   android:id="@+id/tableRow3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" 
+                   android:background="@drawable/styletable2">
+
+                   <TextView
+                       android:id="@+id/textCiudad"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Ciudad: San Pedro Sula"
+                       android:textAppearance="?android:attr/textAppearanceSmall" />
+
+               </TableRow>
+               
+               <TableRow
+                   android:id="@+id/tableRow4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" 
+                   android:background="@drawable/styletable2">
+
+                   <TextView
+                       android:id="@+id/textTelefono"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Telefono: 2509-7725"
+                       android:textAppearance="?android:attr/textAppearanceSmall" />
+
+               </TableRow>
+                <TableRow
+                   android:id="@+id/tableRow5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" 
+                   android:background="@drawable/styletable2">
+
+                   <TextView
+                       android:id="@+id/textMobile"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Celular 3237-6757"
+                       android:textAppearance="?android:attr/textAppearanceSmall" />
+
+               </TableRow>
+               
+               <TableRow
+                   android:id="@+id/tableRow6"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" 
+                   android:background="#949ca1">
+
+                   <TextView
+                       android:id="@+id/textView2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Descripcion:"
+                       android:textColor="#FFFFFF"
+                       android:textAppearance="?android:attr/textAppearanceSmall" />
+
+               </TableRow>
+                <TableRow
+                   android:id="@+id/tableRow7"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" 
+                   android:background="@drawable/styletable2">
+
+                   <TextView
+                       android:id="@+id/textDescripcionperfil"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="hola"
+                       android:textAppearance="?android:attr/textAppearanceSmall" />
+
+               </TableRow>
+                
+
+   		 </TableLayout>
+   	   </ScrollView>
+
+       <Button
+           android:id="@+id/button1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/layout24"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="14dp"
+           android:text="          Enviar Mensaje         " 
+           android:background="@drawable/stylebtnperfil"/>
+
+</RelativeLayout>
